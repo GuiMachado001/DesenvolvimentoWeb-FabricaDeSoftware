@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.login{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #18181b;
+}
+
+.box{
+    width: 1400px;
+    height: 700px;
+    display: flex;
+}
+.animBox{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px 0 0 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.titlePass{
+    border: 1px solid red;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+
+}
+.titlePass h1{
+    font-size: 64px;
+}
