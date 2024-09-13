@@ -12,10 +12,10 @@
     min-height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 20px;
-    
+    /* justify-content: center; */
+    /* padding: 20px; */
     /* backdrop-filter: blur(2px); */
+    flex-direction: column;
     
 }
 
@@ -23,6 +23,7 @@
     width: 1400px;
     height: 700px;
     display: flex;
+    margin-top: 10%;
 }
 .imgBox{
     background-color: rgba(255, 255, 255, 0.5);
