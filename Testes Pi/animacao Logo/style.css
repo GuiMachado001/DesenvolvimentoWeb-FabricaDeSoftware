@@ -32,14 +32,12 @@
     z-index: 2;
     top: 50px; 
     animation: animationMid 6s infinite linear;
-
 }
 
 .imagemBot {
     z-index: 1;
     top: 100px; 
     animation: animationBot 6s infinite linear;
-
 }
 
 @keyframes animationTop {
