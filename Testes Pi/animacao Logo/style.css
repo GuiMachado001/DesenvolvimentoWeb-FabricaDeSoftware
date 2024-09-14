@@ -9,7 +9,6 @@
     position: relative;
     width: 30%; 
     height: 200px; 
-    border: 1px solid red;
     /* margin-top: 2;0%; */
 }
 
@@ -30,13 +29,13 @@
 
 .imagemMid {
     z-index: 2;
-    top: 50px; 
+    top: 25px; 
     animation: animationMid 6s infinite linear;
 }
 
 .imagemBot {
     z-index: 1;
-    top: 100px; 
+    top: 50px; 
     animation: animationBot 6s infinite linear;
 }
 
@@ -88,23 +87,23 @@
 
 @keyframes animationBot {
     0%{
-        top: 100px;
+        top: 50px;
         left: 0px;
     }
     25%{
-        top: 150px;
+        top: 100px;
         left: 0px;
     }
     50%{
-        top: 150px;
+        top: 100px;
         left: -50px;
     }
     75%{
-        top: 150px;
+        top: 100px;
         left: 50px;
     }
     100%{
-        top: 100px;
+        top: 50px;
         left: 0px;
     }
 }
