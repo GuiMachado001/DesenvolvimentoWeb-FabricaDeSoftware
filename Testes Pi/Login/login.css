@@ -1,12 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: inter;
+    font-style: bold;
 }
 
 .login{
     min-height: 100vh;
-    background-image: url(./img/background.png);
+    background-image: url(./image/background.png);
     background-repeat: no-repeat;
     background-position: bottom right;
     background-size: 20%;
@@ -149,13 +153,13 @@
 .line1{
     width: 2px;
     height: 40%;
-    background-color: green;
+    background-color: #3aa867;
     border-radius: 0 0 5px 5px;
 }
 .line2{
     width: 2px;
     height: 40%;
-    background-color: green;
+    background-color: #3aa867;
     border-radius: 5px 5px 0 0 ;
 }
 
@@ -170,4 +174,116 @@
     font-size: 20px;
     font-weight: 800;
     /* transform: rotate(90deg); */
+}
+
+/* animation Logo */
+
+*{
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.containerImagens {
+    position: relative;
+    width: 30%; 
+    height: 200px; 
+    /* margin-top: 2;0%; */
+}
+
+.imagem {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: auto;
+    pointer-events: none; 
+}
+
+.imagemTop {
+    z-index: 3;
+    top: 0px; 
+    animation: animationTop 6s infinite linear;
+}
+
+.imagemMid {
+    z-index: 2;
+    top: 25px; 
+    animation: animationMid 6s infinite linear;
+}
+
+.imagemBot {
+    z-index: 1;
+    top: 50px; 
+    animation: animationBot 6s infinite linear;
+}
+
+@keyframes animationTop {
+    0%{
+        top: 0px;
+        left: 0px;
+    }
+    25%{
+        top: -50px;
+        left: 0px;
+    }
+    50%{
+        top: -50px;
+        left: -50px;
+    }
+    75%{
+        top: -50px;
+        left: 50px;
+    }
+    100%{
+        top: 0px;
+        left: 0px;
+    }
+}
+
+@keyframes animationMid {
+    0%{
+        /* top: 100px; */
+        left: 0px;
+    }
+    25%{
+        /* top: 60px; */
+        left: 0px;
+    }
+    50%{
+        /* top: 60px; */
+        left: 50px;
+    }
+    75%{
+        /* top: 60px; */
+        left: -50px;
+    }
+    100%{
+        /* top: 100px; */
+        left: 0px;
+    }
+}
+
+@keyframes animationBot {
+    0%{
+        top: 50px;
+        left: 0px;
+    }
+    25%{
+        top: 100px;
+        left: 0px;
+    }
+    50%{
+        top: 100px;
+        left: -50px;
+    }
+    75%{
+        top: 100px;
+        left: 50px;
+    }
+    100%{
+        top: 50px;
+        left: 0px;
+    }
 }
