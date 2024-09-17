@@ -37,12 +37,11 @@
     background-color: rgba(198, 196, 196, 0.2);
 }
 .titlePass{
-    width: 50%;
+    width: 60%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 100px;
-
 }
 .titlePass h1{
     font-size: 50px;
