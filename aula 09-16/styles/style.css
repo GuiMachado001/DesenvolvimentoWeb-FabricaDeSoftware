@@ -28,7 +28,9 @@
 html{
     scroll-behavior: smooth;
 }
-
+a{
+    text-decoration: none;
+}
 .btnDefault{
     border: none;
     display: flex;
@@ -46,3 +48,25 @@ html{
 .btnDefault:hover{
     background-color: var(--colorPrimary3);
 }
+
+.socialMidiaButtons{
+    display: flex;
+    gap: 18px;
+}
+.socialMidiaButtons a{
+    width: 45px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--colorNeutra1);
+    font-size: 1.25rem;
+    color: var(--colorNeutra2);
+    box-shadow: 0 0 12px 4px rgba(0,0,0,0.2);
+    transition: box-shadow .3s ease;
+}
+.socialMidiaButtons a:hover{
+    box-shadow: 0 0 12px 8px #f8d477c2;
+    
+}
+
