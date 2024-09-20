@@ -274,3 +274,21 @@ main{
     cursor: pointer;
     
 }
+
+
+
+
+@media (min-width: 0px) and (max-width: 430px){
+
+    .box{
+        width: 100%;
+        border-radius: 10px 10px 10px 10px;
+    }
+    .GroupLine, .groupRight{
+        margin: 0px;
+    }
+    .lblRecuperar{
+        font-size: 10px;
+    }
+
+}
