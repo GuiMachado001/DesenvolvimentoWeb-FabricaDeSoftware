@@ -1,0 +1,80 @@
+.cardapio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.areaCards{
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 32px;
+    gap: 24px;
+    /* background-color: coral; */
+}
+
+.card{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    gap: 18px;
+    width: 350px;
+    padding: 20px;
+    background-color: var(--colorNeutra1);
+    box-shadow: 0 0 23px 4px rgba(0,0,0,0.2);
+}
+
+.cardImage{
+    height: 200px;
+}
+
+.cardHeart{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    right: 0px;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.563rem;
+    background-color: var(--colorPrimary6);
+    color: var(--colorNeutra1);
+    border-radius: 0 20px 0 42.5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    
+}
+.cardHeart:hover{
+    transform: scale(1.1);
+}
+
+.cardDesc{
+    color: #434343;
+    text-align: center;
+}
+.cardRate i{
+    color: var(--colorPrimary6);
+}
+.cardPrice{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.sectionTitle{
+    font-size: 50px;
+    padding: 20px;
+    color: var(--colorPrimary6);
+    text-align: center;
+}
+.sectionSubtitle{
+    font-size: 36px;
+    text-align: center;
+}

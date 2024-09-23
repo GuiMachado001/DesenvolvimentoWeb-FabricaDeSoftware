@@ -4,6 +4,7 @@
 @import url('header.css');
 @import url('home.css');
 @import url('menu.css');
+@import url('feedback.css');
 
 :root{
     --colorPrimary1: #fff9ea;
@@ -70,3 +71,12 @@ a{
     
 }
 
+::-webkit-scrollbar{
+    width: 12px;
+    
+}
+::-webkit-scrollbar-thumb{
+    width: 10px;
+    background-color: var(--colorPrimary6);
+    border-radius: 50px; 
+}
