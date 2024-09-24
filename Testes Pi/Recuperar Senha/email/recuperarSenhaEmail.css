@@ -14,6 +14,7 @@
     background-repeat: no-repeat;
     background-position: bottom right;
     background-size: 20%;
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,7 +23,7 @@
 }
 
 .box{
-    width: 1400px;
+    width: 90vw;
     height: 700px;
     background-color: rgba(198, 196, 196, 0.2);
     backdrop-filter: blur(5px);
@@ -278,7 +279,7 @@ main{
 
 
 
-@media (min-width: 0px) and (max-width: 430px){
+@media (min-width: 0px) and (max-width: 466px){
 
     .box{
         width: 100%;
@@ -290,5 +291,16 @@ main{
     .lblRecuperar{
         font-size: 10px;
     }
-
+    .formRecuperar .lblRecuperar{
+        width: 100%;
+        height: 50px;
+        font-size: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+    .formRecuperar .inpRecuperar{
+        width: 100%;
+        height: 50px;
+        font-size: 15px;
+    }
 }
