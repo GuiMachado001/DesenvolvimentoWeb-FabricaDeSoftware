@@ -239,6 +239,13 @@ main{
     border-radius: 5px;
     font-size: 20px;
     margin-top: 50px;
+    outline: none;
+}
+.formRecuperar .inpRecuperar:hover{
+    border: 3px solid #3aa867;
+}
+.formRecuperar .inpRecuperar:focus{
+    border: 3px solid #3aa867;
 }
 .formRecuperar span{
     width: 100%;
