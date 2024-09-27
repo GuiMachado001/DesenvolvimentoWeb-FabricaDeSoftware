@@ -45,3 +45,27 @@
 .feedbackContent p span{
     color: var(--colorPrimary6);
 }
+
+@media screen and (max-width: 720px) {
+    .depoimentos{
+        flex-direction: column;
+    }
+    .depoimentosCheff{
+        width: 80%;
+    }
+    .feedback{
+        flex-direction: column;
+    }
+    .areaFeedbacks{
+        width: 90%;
+    }
+    .areaFeedbacks .sectionTitle{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .sectionSubtitle{
+        font-size: 2rem;
+        text-align: center;
+
+    }
+}

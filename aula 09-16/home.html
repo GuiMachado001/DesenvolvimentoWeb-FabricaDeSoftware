@@ -8,22 +8,34 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/menu.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
     <header>
         <nav class="navBar">
             <i class="fa-solid fa-burger" id="navLogo"> food</i>
             <ul class="navList">
-                <li class="navItem active"><a href="">Home</a></li>
-                <li class="navItem active"><a href="">Cardápio</a></li>
-                <li class="navItem active"><a href="">Avaliações</a></li>
+                <li class="navItem active"><a href="#home">Home</a></li>
+                <li class="navItem active"><a href="#cardapio">Cardápio</a></li>
+                <li class="navItem active"><a href="#depoimentos">Avaliações</a></li>
             </ul>
             <button class="btnDefault">Peça aqui!</button>
         </nav>
+        <button class="mobileBtn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="mobileMenu">
+            <ul class="mobileNavList">
+                <li class="navItem"><a href="#home">Home</a></li>
+                <li class="navItem"><a href="#cardapio">Cardápio</a></li>
+                <li class="navItem"><a href="#depoimentos">Avaliações</a></li>
+            </ul>
+            <button class="btnDefault">Peça aqui!</button>
+        </div>
     </header>
 
     <main class="content">
-        <section class="home">
+        <section class="home" id="home">
             <div class="shape"></div>
             <div class="cta">
                 <h1 class="title">
@@ -44,7 +56,7 @@
             </div>
         </section>
 
-        <section class="cardapio">
+        <section class="cardapio" id="cardapio">
             <h2 class="sectionTitle">Cardápio</h2>
             <h3 class="sectionSubtitle">Nossos pratos especiais.</h3>
             <div class="areaCards">
@@ -163,7 +175,7 @@
             </div>
         </section>
 
-        <section class="depoimentos">
+        <section class="depoimentos" id="depoimentos">
             <img class="depoimentosCheff" src="src/image/cheffe.png" alt="">
             
             <div class="areaFeedbacks">
@@ -227,5 +239,8 @@
         </div>
     </footer>
 
-</body>
+    <script src="script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</body> 
 </html>

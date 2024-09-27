@@ -32,6 +32,9 @@ html{
 a{
     text-decoration: none;
 }
+section{
+    padding: 28px 8px;
+}
 .btnDefault{
     border: none;
     display: flex;
