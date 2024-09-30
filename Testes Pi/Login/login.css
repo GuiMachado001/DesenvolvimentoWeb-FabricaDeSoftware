@@ -21,7 +21,7 @@
     background-color: white;
 }
 
-.box{
+.containerLogin{
     width: 1400px;
     height: 700px;
     display: flex;
@@ -115,7 +115,7 @@
 .formBox .group input:focus{
     border: 3px solid #3aa867;
 }
-.botao{
+.btnEntrar{
     width: 100%;
     height: 50px;
     display: flex;
@@ -328,7 +328,7 @@
         transform: rotate(180deg);
     }
     /* box da animação  */
-    .box{
+    .containerLogin{
         flex-direction: column;
     }
     .animBox{
