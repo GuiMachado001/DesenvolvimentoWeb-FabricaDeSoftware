@@ -283,3 +283,11 @@ main{
     cursor: pointer;
     
 }
+
+.requisitosInvalidos {
+    color: red;
+}
+
+.requisitosValidos {
+    color: green;
+}

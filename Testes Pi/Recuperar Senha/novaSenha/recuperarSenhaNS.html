@@ -39,22 +39,25 @@
 
             <div class="containerRecuperar">
                 <form action="" class="formRecuperar">
+
                     <label for="" class="lblRecuperar">Insira a nova senha</label>
-                    <input type="password" class="inpRecuperar" placeholder="Nova Senha">
+                    <input id="novaSenha" type="password" class="inpRecuperar" placeholder="Nova Senha">
+                    
+
                     <label for="" class="lblRecuperar">Confirme a nova senha</label>
-                    <input type="password" class="inpRecuperar" placeholder="Confirmar nova Senha">
+                    <input id="confirmSenha" type="password" class="inpRecuperar" placeholder="Confirmar nova Senha">
                    
                     <div class="containerRequisitoSenhas">
                         <h1>A senha deverá conter:</h1>
                         <ul>
-                            <li>Mínimo 8 dígitos</li>
-                            <li>Maiúscula</li>
-                            <li>Número</li>
-                            <li>Caractere Especial</li>
+                            <li id="digito" class="RequisitosMin " >Mínimo 8 dígitos</li>
+                            <li id="maiusca" class="RequisitosMin ">Maiúscula</li>
+                            <li id="numero" class="RequisitosMin ">Número</li>
+                            <li id="caracEspec" class="RequisitosMin " >Caractere Especial</li>
                         </ul>
                     </div>
                     <nav>
-                        <button><a href=".../">Enviar</a></button>
+                        <button type="submit">Enviar</button>
                     </nav>
                 </form>
             </div>
@@ -73,5 +76,7 @@
             </div>
         </div>
     </div>
+
+    <script src="script.js" defer></script>
 </body>
 </html>
