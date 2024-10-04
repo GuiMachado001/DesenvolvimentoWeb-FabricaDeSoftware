@@ -1,0 +1,67 @@
+.slider{
+    margin: 0 auto 100px;
+    width: 99vw;
+    height: 90vh;
+    padding: 0 !important;
+    overflow: hidden;
+}
+
+.sliderContent{
+    width: 400%;
+    height: auto;
+    display: flex;
+}
+.sliderContent input{
+    display: none;
+}
+
+.slideBox{
+    width: 25%;
+    height: auto;
+
+    position: relative;
+    text-align: center;
+    transition: 1s;
+}
+.slideBox img{
+    width: 100%;
+}
+
+.navAuto, .navManual{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 47%;
+}
+
+.navAuto div, .navManual .manualBtn{
+    border: 1px solid var(--colorPrimary6);
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.navManual .manualBtn:not(:last-child), .navAuto div:not(:last-child){
+    margin-right: 10px;
+}
+
+.navManual .manualBtn:hover{
+    background-color: orange;
+}
+
+#radio1:checked ~ .navAuto .autoBtn1,
+#radio2:checked ~ .navAuto .autoBtn2,
+#radio3:checked ~ .navAuto .autoBtn3{
+    background-color: orange;
+}
+
+#radio1:checked ~ .primeiro{
+    margin-left: 0;
+}
+#radio2:checked ~ .primeiro{
+    margin-left: -25%;
+}
+#radio3:checked ~ .primeiro{
+    margin-left: -50%;
+}
