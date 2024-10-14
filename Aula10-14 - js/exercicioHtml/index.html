@@ -12,17 +12,279 @@
         <h1>Exercicios JavaScript Fábrica de Software</h1>
     </div>
 
+
     <main>
-        <section class="exercicio01">
+        <section class="exercicio">
             <div class="titleExercicio">
-                <h2>Exercio(01) - Mostrar os números pares entre 2 a 50. </h2>
+                <h2>Exercício (01) - Mostrar os números pares entre 2 a 50.</h2>
             </div>
-            <div class="respostaContainer displayNone">
+    
+            <div class="respostaContainer" style="display: none;">
+                <textarea readonly>
+    var cont = 2;
+    
+    while(cont <= 50) {
+        if(cont % 2 == 0) {
+            console.log(cont, " - Par");
+        } else {
+            console.log(cont, " - Ímpar");
+        }
+        cont += 1;
+    }
+                </textarea>
+            </div>
+            <button type="button" onclick='abrir(this)'>Ver Mais</button>
             
-                    <span>Texto 1</span>
-            </div>
-            <button type="button" id="btnResposta" onclick='abrir(this)'">Resposta</button>
         </section>
+    
+        <section class="exercicio">
+            <div class="titleExercicio">
+                <h2>Exercício (02) - Mostrar os números 11, 21, 31 … 101. </h2>
+            </div>
+    
+            <div class="respostaContainer" style="display: none;">
+                <textarea readonly>
+var cont = 11;
+
+while(cont <= 101){
+    console.log(cont);
+    cont += 10
+}
+                </textarea>
+            </div>
+            <button type="button" onclick='abrir(this)'>Ver Mais</button>
+            
+        </section>
+
+        <section class="exercicio">
+        <div class="titleExercicio">
+            <h2>Exercício (03) - Ler 10 números e exibir o maior número. </h2>
+        </div>
+
+        <div class="respostaContainer" style="display: none;">
+            <textarea readonly>
+const prompt = require("prompt-sync")();
+var cont = 0;
+
+var numMaior= 0;
+
+while(cont <10){
+    var num = parseInt(prompt("Digite um numero: "))
+
+    if(num > numMaior){
+        numMaior = num
+    }
+    cont += 1
+}
+console.log(numMaior)
+            </textarea>
+        </div>
+        <button type="button" onclick='abrir(this)'>Ver Mais</button>
+        
+        </section>
+    
+        <section class="exercicio">
+            <div class="titleExercicio">
+                <h2>Exercício (04) - Ler 10 números e exibir a soma dos números ímpares. </h2>
+            </div>
+    
+            <div class="respostaContainer" style="display: none;">
+                <textarea readonly>
+const prompt = require("prompt-sync")();
+
+var cont = 0;
+var soma = 0;
+
+while(cont < 10){
+    var num = parseInt(prompt("Digite um numero: "))
+
+    if(num % 2 != 0){
+        soma += num;
+    }
+    cont += 1;
+}
+console.log(soma)
+                </textarea>
+            </div>
+            <button type="button" onclick='abrir(this)'>Ver Mais</button>
+            
+            </section>
+
+        <section class="exercicio">
+                <div class="titleExercicio">
+                    <h2>Exercício (05) - Ler 30 números e exibir a soma dos números que são divisíveis por 5. </h2>
+                </div>
+        
+                <div class="respostaContainer" style="display: none;">
+                    <textarea readonly>
+const prompt = require("prompt-sync")();
+
+var cont = 0;
+var soma = 0;
+
+while(cont < 30){
+    var num = parseInt(prompt("Digite um numero: "))
+
+    if(num % 5 == 0){
+        soma += num
+    }
+    cont +=1
+}
+console.log(soma)
+
+                    </textarea>
+                </div>
+                <button type="button" onclick='abrir(this)'>Ver Mais</button>
+                
+            </section>
+            
+        <section class="exercicio">
+                <div class="titleExercicio">
+                    <h2>Exercício (06) - Ler diversos números e exibir quantos foram digitados. O valor -1 é código de fim.  </h2>
+                </div>
+        
+                <div class="respostaContainer" style="display: none;">
+                    <textarea readonly>
+const prompt = require("prompt-sync")();
+var soma = 0;
+
+while(true){
+    var num = parseInt( prompt("Digite um numero ou '-999' para sair: "));
+
+    if(num == -999){
+        break
+    }else{
+        soma += num
+    }
+}
+
+console.log("A soma dos numeros digitados é: ",soma)
+                    </textarea>
+                </div>
+                <button type="button" onclick='abrir(this)'>Ver Mais</button>
+                
+            </section>
+
+        <section class="exercicio">
+                <div class="titleExercicio">
+                    <h2>Exercício (07) - Ler diversos números e exibir quantos foram digitados. O valor -1 é código de fim</h2>
+                </div>
+        
+                <div class="respostaContainer" style="display: none;">
+                    <textarea readonly>
+const prompt = require("prompt-sync")();
+
+cont = 0;
+
+while(true){
+    var num = parseInt (prompt("Digite um numero ou digite '-1' para finalizar: "));
+
+    if(num == -1){
+        break
+    }
+    cont += 1
+}
+
+console.log(cont, "numeros foram digitados")
+                    </textarea>
+                </div>
+                <button type="button" onclick='abrir(this)'>Ver Mais</button>
+                
+            </section>
+
+        <section class="exercicio">
+            <div class="titleExercicio">
+                <h2>Exercício (08) - Ler diversos números e exibir quantos números ímpares foram digitados. Considere o valor - 999 como código fim de entrada. </h2>
+            </div>
+    
+            <div class="respostaContainer" style="display: none;">
+                <textarea readonly>
+const prompt = require("prompt-sync")();
+
+cont = 0;
+
+
+while(true){
+    var num = parseInt( prompt("Digite um numero ou digite '-999' para finalizar: "));
+
+    if(num % 2 != 0){
+        cont += 1
+    }if (num == -999) {
+        break
+    } else {
+        continue
+    }
+}
+
+console.log(cont-1, "numeros impares foram digitados")
+                </textarea>
+            </div>
+            <button type="button" onclick='abrir(this)'>Ver Mais</button>
+            
+            </section>
+
+        <section class="exercicio">
+                <div class="titleExercicio">
+                    <h2>Exercício (09) - Ler 20 números inteiros e exibir quantas vezes o número 50 foi informado. O valor 0 é o código fim de entrada. 
+                    </h2>
+                </div>
+        
+                <div class="respostaContainer" style="display: none;">
+                    <textarea readonly>
+const prompt = require("prompt-sync")();
+
+cont = 0;
+
+while(true){
+    var num = prompt("Digite um numero ou digite '0' para finalizar: ")
+
+    if(num == 0){
+        break
+    }if (num == 50) {
+        cont += 1
+    } else {
+        continue
+    }
+
+}
+
+console.log(cont, "vezes o numero 50 foi digitado")
+                    </textarea>
+                </div>
+                <button type="button" onclick='abrir(this)'>Ver Mais</button>
+                
+            </section>
+
+        <section class="exercicio">
+                <div class="titleExercicio">
+                    <h2>Exercício (10) - Escreva um algoritmo que calcule e imprima a tabuada do 2,3,4,5,6,7,8,9,10 (1 a 10) 
+
+                    </h2>
+                </div>
+        
+                <div class="respostaContainer" style="display: none;">
+                    <textarea readonly>
+numUm = 2;
+
+
+cont = 0;
+
+while(cont <= 10){
+    numDois = 0;
+    while(numDois <= 10){
+        res = numUm * numDois
+        console.log(numUm, "x", numDois, "=", res);
+        numDois += 1
+    }
+    numUm +=1
+    cont += 1
+    console.log("===============================")
+}
+                    </textarea>
+                </div>
+                <button type="button" onclick='abrir(this)'>Ver Mais</button>
+                
+            </section>
     </main>
 
     <script src="script.js"></script>

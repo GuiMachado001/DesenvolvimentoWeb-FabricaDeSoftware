@@ -4,11 +4,26 @@
     box-sizing: border-box;
 }
 
+:root{
+    --colorButton: #48cf13;
+    --ColorLetras: #278103;
+    --colorDisplayResposta: #bababa;
+}
+::-webkit-scrollbar{
+    width: 12px;
+    
+}
+::-webkit-scrollbar-thumb{
+    width: 10px;
+    background-color: var(--colorButton);
+    border-radius: 50px; 
+}
 body{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-color: #18181b;
 }
 .containerTitle{
     width: 100%;
@@ -16,23 +31,51 @@ body{
     align-items: center;
     justify-content: center;
 }
+.containerTile h1{
+    color: white;
+
+}
 
 main{
     width: 100%;
     margin-top: 100px;
+    color: white;
 }
-.exercicio01{
+.exercicio{
     width: 100%;
-    height: 500px;
-    border:1px solid red;
+    margin-bottom: 20px;
+    padding: 10px;
 }
 
-#resposta{
-    width: 100%;
-    height: 100px;
+.respostaContainer {
+    width: 80%;
+    height: 200px;
+
+    background-color: var(--colorDisplayResposta);
+    border: 1px solid black;
 }
-.displayNone{
-    display: none;
-}.displayBlock{
-    display: block;
+
+
+button {
+    width: 90px;
+    height: 50px;
+
+    font-size: 15px;
+    font-weight: 600;
+    
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--colorButton);
+}
+
+
+textarea{
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    font-weight: 600;
+    resize: none; 
+    padding: 10px;
+    background-color: var(--colorDisplayResposta);
 }
