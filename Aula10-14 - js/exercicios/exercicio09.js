@@ -2,7 +2,7 @@
 
 const prompt = require("prompt-sync")();
 
-cont = 0;
+var cont = 0;
 
 while(true){
     var num = prompt("Digite um numero ou digite '0' para finalizar: ")

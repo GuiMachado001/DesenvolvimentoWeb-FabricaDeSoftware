@@ -1,7 +1,7 @@
 // Ler diversos números e exibir quantos números ímpares foram digitados. Considere o valor - 999 como código fim de entrada. 
 const prompt = require("prompt-sync")();
 
-cont = 0;
+var cont = 0;
 
 
 while(true){

@@ -2,7 +2,7 @@
 
 const prompt = require("prompt-sync")();
 
-cont = 0;
+var cont = 0;
 
 while(true){
     var num = parseInt (prompt("Digite um numero ou digite '-1' para finalizar: "));

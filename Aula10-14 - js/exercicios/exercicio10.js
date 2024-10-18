@@ -3,7 +3,7 @@
 numUm = 2;
 
 
-cont = 0;
+var cont = 0;
 
 while(cont <= 10){
     numDois = 0;
